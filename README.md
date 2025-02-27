@@ -1,51 +1,97 @@
-# Text to Sign Language Translator
+# Real-Time Speech to American Sign Language (ASL) Translator
 
-A Web Application that takes in live audio speech recording as input, converts it into text and displays the relevant Indian Sign Language animations.
-
-# Technology Requirement 
-> - Django Framework is used for website building and backend control.
-> - Frontend using HTML, CSS, and JavaScript.
-> - Text Preprocessing using Natural Language Toolkit(NLTK).
-
-## Prerequisites
-
-> - Python >= 3.7
-> - Browser supports Web Speech API
-> - Download all required packages for Python script A2SL/views.py
+A web application that empowers communication by seamlessly translating spoken language into American Sign Language animations in real-time.
 
 
-Project Demo Video:
-## How to run
+## Project Overview
 
-1. Create a Virtual environment:
-```bash
-python -m venv venv
-```
-2. Activate virtual environment:
-```bash
-venv\Scripts\activate
-```
-3. Install required package:
-```bash
-pip install -r requirements.txt
-```
-4. ready for migrations
-```bash
-python manage.py makemigrations
-```
-5. migrate
-```bash
-python manage.py migrate
-```
-6. run the software
-```bash
-python manage.py runserver 8000
-```
+This project addresses the communication barrier faced by individuals who rely on American Sign Language (ASL). By leveraging web technologies, we've created a user-friendly platform that converts spoken words into corresponding ISL animations, fostering inclusivity and accessibility.
+
+## Key Features
+
+* **Live Speech Transcription:** Utilizes the Web Speech API for accurate and instantaneous conversion of spoken language to text.
+* **Dynamic ISL Animation Display:** Presents visually engaging ISL animations synchronized with the transcribed text, ensuring clear and effective communication.
+* **Intuitive User Interface:** Designed with simplicity and accessibility in mind, making it easy for users of all technical backgrounds to interact with the application.
+* **Cross-Platform Compatibility:** Accessible through modern web browsers on various devices, ensuring widespread availability.
+* **Machine Learning Integration:** Implemented machine learning models to improve translation accuracy over time.
+* **Animation Optimization:** Used Blender and Cascadeur to optimize animations and reduce latency.
+
+## Technology Stack
+
+* **Backend:** Django (Python) - Robust framework for server-side logic and data management.
+* **Frontend:** HTML5, CSS3, JavaScript - Creating a responsive and interactive user experience.
+* **Natural Language Processing (NLP):** NLTK (Natural Language Toolkit) - For text preprocessing and analysis.
+* **Speech Recognition:** Web Speech API - Browser-based API for real-time speech-to-text conversion.
+* **Animation:** Blender, Cascadeur
+
+## Getting Started
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [Your Repository URL Here]
+    cd Real-Time-Speech-to-ISL-Translator
+    ```
+    (Replace `[Your Repository URL Here]` with your actual repository URL.)
+
+2.  **Set Up a Virtual Environment (Recommended):**
+    ```bash
+    python -m venv venv
+    ```
+
+3.  **Activate the Virtual Environment:**
+    * **Windows:**
+        ```bash
+        venv\Scripts\activate
+        ```
+    * **macOS/Linux:**
+        ```bash
+        source venv/bin/activate
+        ```
+
+4.  **Install Dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5.  **Run Database Migrations:**
+    ```bash
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+
+6.  **Launch the Development Server:**
+    ```bash
+    python manage.py runserver 8000
+    ```
+
+7.  **Access the Application:**
+    Open your web browser and navigate to `http://127.0.0.1:8000/`.
+
+## How to Use
+
+1.  Grant microphone access when prompted by your browser.
+2.  Speak clearly and naturally into your microphone.
+3.  The transcribed text will appear on the screen in real-time.
+4.  Corresponding ISL animations will be displayed alongside the text, providing a visual translation of your speech.
+
+## Contributing
+
+We welcome contributions from the community! To contribute:
+
+1.  Fork the repository.
+2.  Create a feature branch (e.g., `git checkout -b feature/new-feature`).
+3.  Commit your changes (`git commit -am 'Add new feature'`).
+4.  Push to the branch (`git push origin feature/new-feature`).
+5.  Create a new Pull Request.
 
 ## Authors
 
-- [Shambhoolal Narwaria](https://github.com/mr-narwaria)
-- [Alhan Charan Beshra](https://github.com/ezio2605)
-- [Abhishek Raj](https://github.com/Abhi9708bittu)
+* [Shambhoolal Narwaria](https://github.com/mr-narwaria)
 
-Enjoy!
+## Future Enhancements
+
+* Implementation of more complex ISL grammar and sentence structures.
+* Integration of machine learning models for improved accuracy and naturalness.
+* Support for multiple languages.
+* Mobile application development for offline access.
+* Personalized user profiles with customizable settings.
